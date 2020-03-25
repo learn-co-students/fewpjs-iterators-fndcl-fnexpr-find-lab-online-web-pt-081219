@@ -10,10 +10,12 @@ function superbowlWin(arr) {
   let thisWin = arr.find(function(win) {
     return win.result === "W";
   })
-  if(thisWin===undefined) {
-    return undefined;
-  }
-  else {
-    return thisWin.year
-  }
+  let result = thisWin === undefined ? undefined : thisWin.year;
+  return result;
+  // if(thisWin===undefined) {
+  //   return undefined;
+  // }
+  // else {
+  //   return thisWin.year
+  // }
 }
