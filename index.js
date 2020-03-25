@@ -12,10 +12,4 @@ function superbowlWin(arr) {
   })
   let result = thisWin === undefined ? undefined : thisWin.year;
   return result;
-  // if(thisWin===undefined) {
-  //   return undefined;
-  // }
-  // else {
-  //   return thisWin.year
-  // }
 }
