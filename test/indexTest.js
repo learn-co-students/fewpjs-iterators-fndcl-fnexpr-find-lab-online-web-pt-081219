@@ -72,4 +72,4 @@ describe('record', function () {
       expect(superbowlWin(sadReality)).to.equal(undefined)
     });
   });
-});
+}).timeout(5000);
