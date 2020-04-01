@@ -1,5 +1,17 @@
-const testVar = {}
+function superbowlWinWithoutFind(objArray) {
+  for (const entry of objArray) {
+    if (entry.result === "W") {
+      return entry.year;
+    }
+  }
+}
 
-function testFunc() {
-  return "hi"
+function superbowlWin(objArray) {
+  let entry = objArray.find(entry => {
+    return entry.result === "W";
+  });
+
+  if (entry) {
+    return entry.year;
+  }
 }
